@@ -1,0 +1,27 @@
+
+angle = 90
+axiom = F+AF+F+AF
+rules:
+A = AF-F+F-AF+F+AF-F+F-A
+
+
+angle = 90
+axiom = A
+rules:
+A = AFBFA+F+BFAFB-F-AFBFA
+B = BFAFB-F-AFBFA+F+BFAFB
+
+angle = 60
+axiom = F++F++F
+rules:
+F = F-F++F-F
+
+angle = 45
+axiom = F
+rules:
+F=-F++F-
+
+angle = 36
+axiom = F++F++F++F++F
+rules:
+F = F++F++F|F-F++F
