@@ -1,13 +1,8 @@
 class RuleSystem:
-    def __init__(self,variables,constants,axiom,rules):
+    def __init__(self,variables,axiom,rules):
         self.variables = variables
-        self.constants = constants
         self.axiom = axiom
         self.rules = rules
-
-        self.executeActions = self.variables | self.constants
-
-        self.stack = []
 
     def generate(self,n):
         finalState = self.axiom
@@ -23,4 +18,4 @@ class RuleSystem:
 
     def execute(self,state):
         for step in state:
-            self.executeActions[step]()
+            self.variables[step]()

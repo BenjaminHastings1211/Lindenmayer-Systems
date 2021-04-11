@@ -51,7 +51,7 @@ class App(Tk):
             "]" : self.pop,
             "|" : lambda : self.turtle.right(180)
         }
-        self.system = RuleSystem(self.presets,{},"",{})
+        self.system = RuleSystem(self.presets,"",{})
 
         self.createFrame()
 
